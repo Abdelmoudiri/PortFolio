@@ -9,7 +9,7 @@ body{
 header{
     width: 100%;
     height: fit-content;
-    background-color: #555;
+    background-color: #333;
 }
 .navbar {
     display: flex;
@@ -28,15 +28,22 @@ header{
 }
 .nav-links a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
+    font-size: large;
     transition: color 0.3s;
+    font-style: bold;
 }
 .nav-links a:hover {
-    color: #ff6f61;
+    color: #1114ea;
 }
 .ZoneRecherche{
     display: flex;
-    /* padding-right:10% ; */
+    width: 20%;
+    height: 5vh;
+}
+.ZoneRecherche input{
+    width: 80%;
+    height: 100%;
 }
 
 .burger {
@@ -101,6 +108,35 @@ main{
     font-size: xx-large;
     cursor: pointer;
 }
+
+
+.btn_box{
+    display: flex ;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.btn_box a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background-color: #00abf0;
+    border-radius:8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn_box a:nth-child(2)
+{
+    background: transparent;
+    color: #00abf0;
+    border:2px #00abf0 solid;
+}
 .image_div{
     grid-column: 2/3;
     height: 100%;
@@ -112,8 +148,8 @@ main{
 }
 .image_div img{
     width: 50%;
-    height: 80%;
-    border-radius: 50%;
+    height: 50%;
+    border-radius: 41% 40% 39% 44% / 35% 30% 59% 46% ;
 }
 
 
@@ -145,38 +181,40 @@ main{
 
 #skills {
     margin-top: 5%;
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px; /* Adds space between skill items */
-    padding: 20px; /* Adds padding inside the section */
+    gap: 20px; 
+    padding: 20px; 
 }
 
 .skill {
     display: flex;
-    flex-direction: column; /* Stack text above image */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px; /* Adds space inside each skill block */
-    background-color: #fff; /* Slight contrast for skill boxes */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Adds subtle shadow */
+    padding: 10px; 
+    background-color: #fff;
+    border-radius: 8px; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .skill img {
-    width: 80px; /* Adjust image size for consistency */
-    height: auto; /* Maintains image aspect ratio */
-    margin-bottom: 10px; /* Adds space between image and text */
+    width: 80px;
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+.link_git{
+    color: #000;
 }
 
 /* projet */
 #projet{
     margin-top: 5%;
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px; /* Adds space between skill items */
-    padding: 20px; /* Adds padding inside the section */
+    gap: 20px; 
+    padding: 20px;
 }
 /* testimonials dection */
 #testimonials {
@@ -193,6 +231,9 @@ main{
     font-style: italic;
     color: #555;
 }
+
+/* :::::::::::::::::::::::::::::::::::::::::::: */
+
 /* media query */
 @media (max-width: 768px) {
     .nav-links {
@@ -239,4 +280,46 @@ main{
 
 
   
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 15px;
+}
+
+.footer-content a {
+    color: #00abf0;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer-note {
+    font-size: 0.9rem;
+    color: #aaa;
 }

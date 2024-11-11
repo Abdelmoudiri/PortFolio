@@ -15,11 +15,11 @@
                 <li><a href="#projects">Projets</a></li>
                 <li><a href="#skills">Compétences</a></li>
                 <li><a href="#testimonials">Témoignages</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href=".footer">Contact</a></li>
             </ul>
             <div class="ZoneRecherche">
                 <input type="text" placeholder="Search">
-                <img src="./src/img/Recherche.svg" alt="">
+                <a href=""><img src="./src/img/Recherche.svg" alt="button de recheche "></a>
             </div>
             <div class="burger">
                 <div class="line1"></div>
@@ -31,9 +31,17 @@
 
     <main>
         <div class="title_div">
-            <h1>I'M <span>ABDELJABBAR MOUDIRI</span></h1>
-            <p>Full stack Developper </p>
-            <input type="button" value="Contact Me">
+            <div>
+                 <h1>I'M <span>ABDELJABBAR MOUDIRI</span></h1>
+                <p>Full stack Developper </p>
+                <p>Full Stack Developer in Training | Passionate about 
+                    technological innovation and software development best practices 🚀
+            </div>
+            <div class="btn_box">
+                <a href="#">Hire Me</a>
+                <a href="#">Talk With Me</a>
+            </div>
+           
         </div>
         <div class="image_div">
             <img src="src/img/profile.jpg" alt="">
@@ -82,23 +90,31 @@
                 <p>Task Flow</p>
                 <img src="src/img/taskflow.jpg" alt="HTML5 Logo">
                 <p>
-                    TaskFlow est une application de gestion de tâches intuitive qui permet aux utilisateurs de créer, organiser et prioriser facilement leurs tâches. Conçue pour améliorer la productivité, elle offre des fonctionnalités de tri par date et priorité, idéale pour les professionnels et les étudiant</p>
+                    TaskFlow est une application de gestion de tâches intuitive qui permet aux utilisateurs de créer, organiser et prioriser facilement leurs tâches. Conçue pour améliorer la productivité, elle offre des fonctionnalités de tri par date et priorité, idéale pour les professionnels et les étudiant
+                <a class="link_git" href="https://github.com/Abdelmoudiri/Syst-me-de-Gestion-des-T-ches-To-Do-List"></a>
+                </p>
             </div>
             <div class="skill">
                 <p>ImoView</p>
                 <img src="src/img/imoView.jpg" alt="CSS3 Logo">
-                <p>ImoView est une plateforme innovante de gestion immobilière qui facilite la recherche, la visualisation et la gestion des biens immobiliers. Avec une interface conviviale, ImoView permet aux utilisateurs de naviguer facilement à travers les annonces, de visualiser des photos et des visites virtuelles, et de gérer les transactions immobilières de manière efficace, que ce soit pour la vente, l'achat ou la location de propriétés</p>
+                <p>ImoView est une plateforme innovante de gestion immobilière qui facilite la recherche, la visualisation et la gestion des biens immobiliers. Avec une interface conviviale, ImoView permet aux utilisateurs de naviguer facilement à travers les annonces, de visualiser des photos et des visites virtuelles, et de gérer les transactions immobilières de manière efficace, que ce soit pour la vente, l'achat ou la location de propriétés
+                <a class="link_git" href="https://github.com/Abdelmoudiri/ImoView"></a>
+                </p>
             </div>
             <div class="skill">
                 <p>Calculator</p>
                 <img src="src/img/calcule.jpg" alt="JavaScript Logo">
-                <p>Calculator est une application simple et efficace qui permet aux utilisateurs de réaliser des calculs mathématiques de manière rapide et intuitive. Avec une interface épurée, elle offre des fonctions de base telles que l'addition, la soustraction, la multiplication et la division, ainsi que des opérations plus avancées, répondant ainsi aux besoins quotidiens des étudiants, des professionnels et de toute personne ayant besoin d'effectuer des calculs en déplacement.</p>
+                <p>Calculator est une application simple et efficace qui permet aux utilisateurs de réaliser des calculs mathématiques de manière rapide et intuitive. Avec une interface épurée, elle offre des fonctions de base telles que l'addition, la soustraction, la multiplication et la division, ainsi que des opérations plus avancées, répondant ainsi aux besoins quotidiens des étudiants, des professionnels et de toute personne ayant besoin d'effectuer des calculs en déplacement.
+                    <a class="link_git" href="https://github.com/Abdelmoudiri/Calucle_HTML"></a>     
+                </p>
             </div>
             <div class="skill">
                 <p>Gestion du Etudiants</p>
                 <img src="src/img/gestionEtudiant.jpg" alt="csharp Logo">
                 <p>
-                    Gestion d'Étudiant est un projet développé en langage C qui permet de gérer les informations académiques des étudiants. L'application offre des fonctionnalités de base pour ajouter, afficher et modifier les données des étudiants, telles que le nom, les notes, et les cours. Grâce à une interface en ligne de commande simple, ce projet aide à organiser et à suivre les performances académiques, facilitant ainsi la gestion des informations des étudiants de manière efficace et intuitive.</p>
+                    Gestion d'Étudiant est un projet développé en langage C qui permet de gérer les informations académiques des étudiants. L'application offre des fonctionnalités de base pour ajouter, afficher et modifier les données des étudiants, telles que le nom, les notes, et les cours. Grâce à une interface en ligne de commande simple, ce projet aide à organiser et à suivre les performances académiques, facilitant ainsi la gestion des informations des étudiants de manière efficace et intuitive.
+                    <a class="link_git" href="https://github.com/Abdelmoudiri/Projet-SAS"></a>
+                </p>
             </div>
     </section>
     
@@ -106,20 +122,43 @@
 
     </section>
 
-     <section id="testimonials">
+    <section id="testimonials" class="testimonials-section">
         <h2>Témoignages</h2>
-        <div class="testimonial">
-            <p>"Super développeur! Très professionnel et à l'écoute."</p>
-            <span>- Client satisfait</span>
-        </div>
-        <div class="testimonial">
-            <p>"Le projet a été livré à temps avec une qualité exceptionnelle."</p>
-            <span>- Un autre client</span>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Super développeur! Très professionnel et à l'écoute."</p>
+                <div class="testimonial-author">- Client satisfait</div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Le projet a été livré à temps avec une qualité exceptionnelle."</p>
+                <div class="testimonial-author">- Un autre client</div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Créatif et toujours à la recherche de solutions innovantes."</p>
+                <div class="testimonial-author">- Partenaire de projet</div>
+            </div>
         </div>
     </section>
+    
     <footer class="footer">
-
+        <div class="footer-content">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:abdeljabbar.moudiri@example.com">abdeljabbar.moudiri@example.com</a></p>
+            <p>Téléphone: <a href="tel:+212612345678">+212 67 77 71 34 </a></p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/abdeljabbar-moudiri/" target="_blank">
+                    <img src="src/img/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/Abdelmoudiri" target="_blank">
+                    <img src="src/img/git.png" alt="GitHub">
+                </a>
+                <a href="https://twitter.com/abdeljabbar" target="_blank">
+                    <img src="/src/img/gmail.png" alt="Gmail">
+                </a>
+            </div>
+        </div>
+        <p class="footer-note">© 2024 Abdeljabbar Moudiri. Tous droits réservés.</p>
     </footer>
-
+    
 </body>
 </html>
